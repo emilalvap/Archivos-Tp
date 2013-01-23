@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import salida.SalidaDeDatos;
 
-import ejecucion.Tour;
+import ejecucion.ProblemaViajante;
 import entrada.CargadorFichero;
 
 public class TestTour {
@@ -19,8 +19,8 @@ public class TestTour {
 		SalidaDeDatos salida = new SalidaDeDatos(1);
 		StringTokenizer contenidoFormateado = CargadorFichero.cargarArchivoFormateado("eil51.tsp");
 		StringTokenizer contenidoFormateado2 = CargadorFichero.cargarArchivoFormateado("eil51.tsp");
-		Tour tour1 = new Tour(salida);
-		Tour tour2 = new Tour(salida);
+		ProblemaViajante tour1 = new ProblemaViajante(salida);
+		ProblemaViajante tour2 = new ProblemaViajante(salida);
 		tour1.inicializarTour(contenidoFormateado);
 		tour2.inicializarTour(contenidoFormateado2);
 		try{
@@ -43,8 +43,8 @@ public class TestTour {
 		SalidaDeDatos salida = new SalidaDeDatos(1);
 		StringTokenizer contenidoFormateado = CargadorFichero.cargarArchivoFormateado("eil51.tsp");
 		StringTokenizer contenidoFormateado2 = CargadorFichero.cargarArchivoFormateado("eil51.tsp");
-		Tour tour1 = new Tour(salida);
-		Tour tour2 = new Tour(salida);
+		ProblemaViajante tour1 = new ProblemaViajante(salida);
+		ProblemaViajante tour2 = new ProblemaViajante(salida);
 		tour1.inicializarTour(contenidoFormateado);
 		tour2.inicializarTour(contenidoFormateado2);
 		tour1.ejecutarNVeces(tMax);

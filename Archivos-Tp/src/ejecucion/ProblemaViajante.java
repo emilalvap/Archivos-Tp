@@ -8,7 +8,7 @@ import entrada.ConstructorMatrizDijkstra;
 import salida.SalidaDeDatos;
 
 
-public class Tour {
+public class ProblemaViajante {
 	
 	// VARIABLES DE LA CLASE
 	
@@ -60,7 +60,7 @@ public class Tour {
 	 * 
 	 * @param salida Salida de datos donde se mostraran las iteraciones
 	 */
-	public Tour(SalidaDeDatos salida){
+	public ProblemaViajante(SalidaDeDatos salida){
 		
 		this.salida=salida;
 	

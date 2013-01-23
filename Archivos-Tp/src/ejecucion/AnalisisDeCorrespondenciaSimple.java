@@ -14,7 +14,7 @@ public class AnalisisDeCorrespondenciaSimple  {
 	// VARIABLES DE LA CLASE
 	
 	SalidaDeDatos salida;
-	Tour tour;
+	ProblemaViajante tour;
 	
 	
 	/* RESUMEN DE LOS MÉTODOS DE LA CLASE:
@@ -61,7 +61,7 @@ public class AnalisisDeCorrespondenciaSimple  {
 		StringTokenizer contenidoFormateado = CargadorFichero.cargarArchivoFormateado(archivo);
 		
 		// Inicializa la matriz de Dijkstra
-		this.tour = new Tour(salida);
+		this.tour = new ProblemaViajante(salida);
 		tour.inicializarTour(contenidoFormateado);
 
 	}
