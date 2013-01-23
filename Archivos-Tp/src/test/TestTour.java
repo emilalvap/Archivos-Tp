@@ -38,6 +38,8 @@ public class TestTour {
 	@Test
 	public void testGenerar() {
 		
+		// Se ejecuta 4.000 veces en vez de 50.000 para evitar tiempos de espera
+		int tMax= 4000;
 		SalidaDeDatos salida = new SalidaDeDatos(1);
 		StringTokenizer contenidoFormateado = CargadorFichero.cargarArchivoFormateado("eil51.tsp");
 		StringTokenizer contenidoFormateado2 = CargadorFichero.cargarArchivoFormateado("eil51.tsp");
@@ -45,8 +47,8 @@ public class TestTour {
 		Tour tour2 = new Tour(salida);
 		tour1.inicializarTour(contenidoFormateado);
 		tour2.inicializarTour(contenidoFormateado2);
-		tour1.ejecutarTMAXVeces();
-		tour2.ejecutarTMAXVeces();
+		tour1.ejecutarNVeces(tMax);
+		tour2.ejecutarNVeces(0);
 		
 		try{
 			

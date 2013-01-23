@@ -5,31 +5,19 @@ import java.io.* ;
 
 
 public class CargadorFichero {
-
-
-	/**	Carga el contenido del archivo y lo formatea
-	 * 
-	 * @param archivo
-	 * @return cadena formateada
-	 */
-	public static StringTokenizer cargarArchivoFormateado(String archivo){
-		
-		//Carga el contenido de fichero
-		String contenidoFichero = cargarContenidoFichero(archivo);
-		//Lo formatea
-		StringTokenizer cadenaFormateada = formatearContenido(contenidoFichero); 
-		
-		return cadenaFormateada;
-		
-	}
 	
+	/* Resumen de los métodos de la clase:
+	 * 1. String cargarContenidoFichero(String archivo)				--> Carga el contenido del fichero pasado como parametro.
+	 * 2. StringTokenizer formatearContenido(String contenido)		--> Formatea el string pasado por parametro.
+	 * 3. StringTokenizer cargarArchivoFormateado(String archivo)	--> Carga el contenido del archivo y lo formatea
+	 */
 
 	/** Carga el contenido del fichero pasado como parametro
 	 * 
 	 * @param archivo
 	 * @return contenido como String
 	 */
-	private static String cargarContenidoFichero(String archivo ){
+	private static String cargarContenidoFichero(String archivo){
 		
 		String contenidoFichero = "";
 		if( archivo != null ){
@@ -64,7 +52,6 @@ public class CargadorFichero {
 		return contenidoFichero;
 	}
 	
-
 	/** Formatea el string pasado por parametro
 	 * 
 	 * @param contenido
@@ -75,5 +62,21 @@ public class CargadorFichero {
 		//Le aplica el formato a la cadena pasada como parametro
 		return new StringTokenizer(contenido,"\n\t\r\f");
 	
+	}
+	
+	/**	Carga el contenido del archivo y lo formatea
+	 * 
+	 * @param archivo
+	 * @return cadena formateada
+	 */
+	public static StringTokenizer cargarArchivoFormateado(String archivo){
+		
+		//Carga el contenido de fichero
+		String contenidoFichero = cargarContenidoFichero(archivo);
+		//Lo formatea
+		StringTokenizer cadenaFormateada = formatearContenido(contenidoFichero); 
+		
+		return cadenaFormateada;
+		
 	}
 }

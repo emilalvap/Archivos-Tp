@@ -228,7 +228,7 @@ public class ConstructorMatrizDijkstra {
 			String cadenaAux = "";
 			boolean noEncontrado = true;
 			while(noEncontrado){
-				
+				// Busca hasta que encuentra el token DIMENSION o DIMENSION:
 				cadenaAux = cadena.nextToken();
 				if( cadenaAux.equals("DIMENSION")){
 					
@@ -245,6 +245,7 @@ public class ConstructorMatrizDijkstra {
 				
 				}
 			}
+			// Obtiene el numero de ciudades
 			numCiudades = Integer.parseInt(cadenaAux);
 			return numCiudades;
 		}
