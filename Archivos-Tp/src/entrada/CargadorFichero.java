@@ -6,12 +6,15 @@ import java.io.* ;
 
 public class CargadorFichero {
 	
-	/* Resumen de los métodos de la clase:
+	/* RESUMEN DE LOS MÉTODOS DE LA CLASE:
 	 * 1. String cargarContenidoFichero(String archivo)				--> Carga el contenido del fichero pasado como parametro.
 	 * 2. StringTokenizer formatearContenido(String contenido)		--> Formatea el string pasado por parametro.
-	 * 3. StringTokenizer cargarArchivoFormateado(String archivo)	--> Carga el contenido del archivo y lo formatea
+	 * 3. StringTokenizer cargarArchivoFormateado(String archivo)	--> Carga el contenido del archivo y lo formatea.
 	 */
 
+	
+	
+	
 	/** Carga el contenido del fichero pasado como parametro
 	 * 
 	 * @param archivo
@@ -52,6 +55,7 @@ public class CargadorFichero {
 		return contenidoFichero;
 	}
 	
+	
 	/** Formatea el string pasado por parametro
 	 * 
 	 * @param contenido
@@ -63,6 +67,7 @@ public class CargadorFichero {
 		return new StringTokenizer(contenido,"\n\t\r\f");
 	
 	}
+	
 	
 	/**	Carga el contenido del archivo y lo formatea
 	 * 

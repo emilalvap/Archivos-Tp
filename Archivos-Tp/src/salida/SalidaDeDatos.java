@@ -2,9 +2,22 @@ package salida;
 
 public class SalidaDeDatos {
 	
+	// VARIABLES DE LA CLASE
 	
-	//Estable el standar de salida, por comodidad solo se contempla la pantalla
+	//Establece el standar de salida, por comodidad solo se contempla la pantalla
 	int estandar;
+	
+	
+	/* RESUMEN DE LOS MÉTODOS DE LA CLASE:
+	 * 
+	 * 1. SalidaDeDatos()			--> Constructor por defecto establece el estandar como salida por pantalla
+	 * 2. SalidaDeDatos(int i)		--> Constructor del objeto salida con el estandar i de salida
+	 * 3. mostrar(String mensaje)	--> Muestra el mensaje por el estandar determinado
+	 * 4. mostrarIteracion(int n)	--> Muestra la iteracion con formato por el estandar determinado
+	 */
+	
+	
+	
 	
 	/** Constructor por defecto establece el estandar como salida por pantalla
 	 * 
@@ -14,7 +27,8 @@ public class SalidaDeDatos {
 		estandar=0;
 	}
 	
-	/** Crea el objeto salida con el estandar i de salida
+	
+	/** Constructor del objeto salida con el estandar i de salida
 	 * @param i
 	 */
 	public SalidaDeDatos(int i) {
@@ -22,6 +36,7 @@ public class SalidaDeDatos {
 		estandar = i;
 	}
 
+	
 	/** Muestra el mensaje por el estandar determinado
 	 * @param mensaje
 	 */
@@ -35,6 +50,7 @@ public class SalidaDeDatos {
 			
 		}
 	}
+	
 	
 	/** Muestra la iteracion con formato por el estandar determinado
 	 * @param n

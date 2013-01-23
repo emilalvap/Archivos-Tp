@@ -10,6 +10,8 @@ import salida.SalidaDeDatos;
 
 public class Tour {
 	
+	// VARIABLES DE LA CLASE
+	
 	// Desconocida su utilidad
 	private static final double BETA = 2,GAMMA = 0.1,qZERO = 0.9,Q = 1.0;
 	private static final int M = 2;
@@ -34,12 +36,13 @@ public class Tour {
 	private SalidaDeDatos salida;
 	
 	
-	/* Resumen de métodos de la clase
+	/* RESUMEN DE LOS MÉTODOS DE LA CLASE:
+	 * 
 	 * 1.  Tour(SalidaDeDatos salida)							--> Constructor con paso de salida de datos.
 	 * 2.  inicializarTour(StringTokenizer contenidoFormateado)	--> Inicializa el tour.
 	 * 3.  inicializaArrays()									--> Inicializa los arrays feromonas y visibilidad.
 	 * 4.  generarTour()										--> Genera el Tour.
-	 * 5.  ejecutarNVeces(int numVeces)							--> Ejecuta la construccion de Tour numVeces veces y muesta 
+	 * 5.  ejecutarNVeces(int numVeces)							--> Ejecuta la construccion de Tour numVeces veces y muestra 
 	 * 																las iteraciones.					
 	 * 6.  funcionMatematica()									--> Funcion matematica de utilidad desconocida aislada para
 	 * 																 mayor legibilidad.
@@ -50,6 +53,9 @@ public class Tour {
 	 * 11. inicializaArrayYaVisitadas()							--> Inicializa el array yaVisitadas a false.
 	 */
 
+	
+	
+	
 	/** Constructor con paso de salida de datos.
 	 * 
 	 * @param salida Salida de datos donde se mostraran las iteraciones
@@ -80,6 +86,7 @@ public class Tour {
 		inicializaArrays();
 	}
 	
+	
 	/** Inicializa los arrays feromonas y visibilidad.
 	 * 
 	 */
@@ -103,6 +110,7 @@ public class Tour {
 		}
 		
 	}
+	
 	
 	/** Genera el Tour.
 	 * 
@@ -138,6 +146,7 @@ public class Tour {
 		salida.mostrar("NN = " + mejorLongitud);
 		
 	}
+	
 	
 	/** Ejecuta la construccion de Tour numVeces veces y muesta las iteraciones.
 	 *  En la ejecucion intenta encontrar un nuevo itinerario mas corto
@@ -176,9 +185,6 @@ public class Tour {
 		
 		}
 	}
-	
-	
-	
 	
 
 	/** Construye el Tour
@@ -285,6 +291,7 @@ public class Tour {
 		
 	}
 	
+	
 	/**	Devuelve el mejor itinerario como string
 	 * 
 	 * @return itinerario como string
@@ -301,6 +308,7 @@ public class Tour {
 		return itinerario;
 		
 	}
+	
 	
 	/** Devuelve la mejor longitud registrada
 	 * 

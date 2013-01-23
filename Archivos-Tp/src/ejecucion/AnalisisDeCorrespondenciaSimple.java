@@ -11,17 +11,23 @@ import salida.SalidaDeDatos;
 
 public class AnalisisDeCorrespondenciaSimple  {
 	
-	//Variables de la clase
+	// VARIABLES DE LA CLASE
+	
 	SalidaDeDatos salida;
 	Tour tour;
 	
-	/* Resumen de métodos de la clase:
+	
+	/* RESUMEN DE LOS MÉTODOS DE LA CLASE:
+	 * 
 	 * 1. main(String args[])	--> Main de la clase.
 	 * 2. SimpleACS()	 		--> Constructor por defecto.
 	 * 3. iniciar()				--> Declaración e inicialización de variables.
 	 * 4. ejecutar() 			--> Ejecución del programa.
 	 * 5. finalizar()			--> Finaliza la ejecución .
 	 */
+	
+	
+	
 	
 	/** Main de la clase
 	 * @param args

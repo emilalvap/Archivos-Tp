@@ -4,8 +4,33 @@ import java.util.StringTokenizer;
 
 public class ConstructorMatrizDijkstra {
 
-		
+		/* RESUMEN DE LOS MÉTODOS DE LA CLASE:
+		 * 
+		 * 1. construyeMatriz(StringTokenizer cadenaFormateada)						--> Recibe la cadena formateada, obtiene 
+		 * 																				el numero de ciudades y llama al 
+		 * 																				constructor de	la matriz de Dijkstra 
+		 * 
+		 * 2. construyeMatriz(StringTokenizer cadenaFormateada, int numCiudades)	--> Recibe el numero de ciudades y el texto
+		 * 																				formateado y escoge el metodo para 
+		 * 																				rellenar la matriz
+		 * 
+		 * 3. construirDistanciasAlgoritmoDeEuclides(StringTokenizer strTok, int numCiudades) --> Obtiene la matriz mediante
+		 * 																						 el algoritmo de Euclides
+		 * 
+		 * 4. rellenaMatriz(double[][] coordenadas,int distancia, int numCiudades, int X, int Y)--> Rellena la matriz mediante
+		 * 																							el algoritmo de Euclides
+		 * 
+		 * 5.construirDistanciasExplicito( StringTokenizer cadena, int numCiudades )	--> Construye la matriz de 
+		 * 																					Dijkstra explicitamente
+		 * 
+		 * 6. calcularNumCiudades( StringTokenizer cadena)		--> Obtiene el numero de ciudades de la cadena pasada 
+		 * 															por argumento
+		 */
+	
+	
+	
 		/** Recibe la cadena formateada y construye la matriz de Dijkstra a partir de ella
+		 * 
 		 *  a traves de diversos metodos
 		 * @param cadenaFormateada
 		 * @return int[][] matrizDeDijkstra construida
@@ -20,7 +45,9 @@ public class ConstructorMatrizDijkstra {
 			
 		}
 		
+		
 		/**	Recibe el numero de ciudades y el texto formateado y escoge el metodo para rellenar la matriz
+		 * 
 		 * @param cadenaFormateada
 		 * @param numCiudades
 		 * @return matrizAux ya rellena
@@ -91,6 +118,7 @@ public class ConstructorMatrizDijkstra {
 		
 
 		/**	Obtiene la matriz mediante el algoritmo de Euclides
+		 * 
 		 * @param strTok
 		 * @param numCiudades
 		 * @return matrizAux rellena
@@ -140,6 +168,7 @@ public class ConstructorMatrizDijkstra {
 		
 		
 		/** Rellena la matriz mediante el algoritmo de Euclides
+		 * 
 		 * @param coordenadas
 		 * @param distancia
 		 * @param numCiudades
@@ -165,7 +194,9 @@ public class ConstructorMatrizDijkstra {
 			return matrizAux ;
 		}
 		
+		
 		/** Construye la matriz de Dijkstra explicitamente
+		 * 
 		 * @param cadena
 		 * @param numCiudades
 		 * @return matrizAux ya rellena
@@ -219,6 +250,7 @@ public class ConstructorMatrizDijkstra {
 		
 
 		/** Obtiene el numero de ciudades de la cadena pasada por argumento
+		 * 
 		 * @param cadena
 		 * @return numCiudades Numero de ciudades indicadas en la cadena
 		 */
