@@ -32,7 +32,7 @@ public class ConstructorMatrizDijkstra {
 		/** Recibe la cadena formateada y construye la matriz de Dijkstra a partir de ella
 		 * 
 		 *  a traves de diversos metodos
-		 * @param cadenaFormateada
+		 * @param cadenaFormateada Cadena con los datos de la matriz
 		 * @return int[][] matrizDeDijkstra construida
 		 */
 		public static int[][] construyeMatriz(StringTokenizer cadenaFormateada){
@@ -48,8 +48,8 @@ public class ConstructorMatrizDijkstra {
 		
 		/**	Recibe el numero de ciudades y el texto formateado y escoge el metodo para rellenar la matriz
 		 * 
-		 * @param cadenaFormateada
-		 * @param numCiudades
+		 * @param cadenaFormateada Cadena con los datos de la matriz
+		 * @param numCiudades Numero de ciudades
 		 * @return matrizAux ya rellena
 		 */
 		private static int[][] construyeMatriz(StringTokenizer cadenaFormateada, int numCiudades){
@@ -119,8 +119,8 @@ public class ConstructorMatrizDijkstra {
 
 		/**	Obtiene la matriz mediante el algoritmo de Euclides
 		 * 
-		 * @param strTok
-		 * @param numCiudades
+		 * @param strTok Cadena con los datos de la matriz
+		 * @param numCiudades Numero de ciudades
 		 * @return matrizAux rellena
 		 */
 		private static int[][] construirDistanciasAlgoritmoDeEuclides(StringTokenizer strTok, int numCiudades){
@@ -169,11 +169,11 @@ public class ConstructorMatrizDijkstra {
 		
 		/** Rellena la matriz mediante el algoritmo de Euclides
 		 * 
-		 * @param coordenadas
-		 * @param distancia
-		 * @param numCiudades
-		 * @param X
-		 * @param Y
+		 * @param coordenadas Desconocida su utilidad
+		 * @param distancia Desconocida su utilidad
+		 * @param numCiudades Número de ciudades
+		 * @param X indice
+		 * @param Y indice
 		 * @return matrizAux ya rellena
 		 */
 		private static int[][] rellenaMatriz(double[][] coordenadas,int distancia, int numCiudades, int X, int Y){

@@ -275,8 +275,8 @@ public class Tour {
 	
 	/** Calcula la longitud del tour
 	 * 
-	 * @param tour
-	 * @return longitud
+	 * @param tour Tour al que calcular la longitud
+	 * @return longitud Longitud del tour pasado como parametro
 	 */
 	private int calcularLongitud( int tour []) {
 		

@@ -17,7 +17,7 @@ public class CargadorFichero {
 	
 	/** Carga el contenido del fichero pasado como parametro
 	 * 
-	 * @param archivo
+	 * @param archivo El nombre del archivo
 	 * @return contenido como String
 	 */
 	private static String cargarContenidoFichero(String archivo){
@@ -58,7 +58,7 @@ public class CargadorFichero {
 	
 	/** Formatea el string pasado por parametro
 	 * 
-	 * @param contenido
+	 * @param contenido Cadena con un contenido
 	 * @return contenido formateado
 	 */
 	private static StringTokenizer formatearContenido(String contenido){
@@ -71,7 +71,7 @@ public class CargadorFichero {
 	
 	/**	Carga el contenido del archivo y lo formatea
 	 * 
-	 * @param archivo
+	 * @param archivo Nombre del archivo
 	 * @return cadena formateada
 	 */
 	public static StringTokenizer cargarArchivoFormateado(String archivo){

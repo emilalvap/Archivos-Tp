@@ -29,16 +29,16 @@ public class SalidaDeDatos {
 	
 	
 	/** Constructor del objeto salida con el estandar i de salida
-	 * @param i
+	 * @param estandar Estandar de salida de datos
 	 */
-	public SalidaDeDatos(int i) {
+	public SalidaDeDatos(int estandar) {
 		// TODO Auto-generated constructor stub
-		estandar = i;
+		this.estandar = estandar;
 	}
 
 	
 	/** Muestra el mensaje por el estandar determinado
-	 * @param mensaje
+	 * @param mensaje Mensaje a mostrar
 	 */
 	public void mostrar(String mensaje){
 
@@ -53,7 +53,7 @@ public class SalidaDeDatos {
 	
 	
 	/** Muestra la iteracion con formato por el estandar determinado
-	 * @param n
+	 * @param n Número de la iteración
 	 */
 	public void mostrarIteracion(int n){
 		
