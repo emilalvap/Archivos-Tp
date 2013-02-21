@@ -10,7 +10,11 @@ public class Ciclista extends Persona implements ObjetoQueSeEjecuta, ObjetoQueSe
 	private double VelocidadActual, VelocidadMedia, Registros;
 	private boolean pedalada;
 	
-	//Inicializa el ciclista
+	
+	/**Inicializa el ciclista
+	 * @param Peso
+	 * @param bici
+	 */
 	public Ciclista(int Peso, Bicicleta bici){
 		super(Peso);
 		Recorrido=0;
@@ -21,7 +25,10 @@ public class Ciclista extends Persona implements ObjetoQueSeEjecuta, ObjetoQueSe
 		pedalada=false;
 	}
 	
-	// EJECUCION
+	
+	/* EJECUCION
+	 * @see objetos.ObjetoQueSeEjecuta#ejecuta()
+	 */
 	public void ejecuta(){
 		
 		int randomPedalada = (int)(Math.random()*100);
@@ -53,13 +60,19 @@ public class Ciclista extends Persona implements ObjetoQueSeEjecuta, ObjetoQueSe
 		Registros++;
 	}
 	
-	public void darPedalada(){ //Actualiza la velocidad con una pedalada en el plato
-		//y piñon actual, si la ACELERACION es superior a la VELOCIDAD ACTUAL - DESACELERACION,
-		//actualiza el valor, si no lo "desacelera"
+	/**Actualiza la velocidad con una pedalada en el plato
+	 *	y piñon actual, si la ACELERACION es superior a la VELOCIDAD ACTUAL - DESACELERACION,
+	 *	actualiza el valor, si no lo "desacelera"
+	 */
+	public void darPedalada(){ 
 		this.VelocidadActual = (bicicleta.aceleracion()>(VelocidadActual-0.8)) ?  bicicleta.aceleracion():VelocidadActual-0.8;
 		
 	}
-	//Muestra 
+	
+	
+	/* Muestra 
+	 * @see objetos.ObjetoQueSeMuestra#mostrar()
+	 */
 	public String mostrar(){
 		String patron = "##.##";
 		DecimalFormat formato = new DecimalFormat(patron);
@@ -70,6 +83,9 @@ public class Ciclista extends Persona implements ObjetoQueSeEjecuta, ObjetoQueSe
 		
 	}
 
+	/** Devuelve la Velocidad Actual
+	 * @return VelocidadActual
+	 */
 	public double getVelocidadActual() {
 		// TODO Auto-generated method stub
 		return VelocidadActual;
